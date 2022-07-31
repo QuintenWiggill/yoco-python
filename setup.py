@@ -10,7 +10,7 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="yoco-python",
-    version="0.1.2",
+    version="0.1.3",
     description="Python SDK for Yoco API",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -30,5 +30,8 @@ setup(
         "Operating System :: OS Independent"
     ],
     packages=["yoco_python"],
+    install_requires=[
+        "requests",
+    ],
     include_package_data=True,
 )
